@@ -1,0 +1,14 @@
+Question 1.b: 
+- Array -> The num of values in a Java array is always fixed.
+- So in order to add a new element to the queue, I had to create a new array and copy all the elements using a for loop. This can become inefficient as the queue grows bigger. 
+- This also applies to removing an element to the queue. As the queue size is changing, I had to create a new array and copy all the elements to a new array. 
+- A more efficient way would be to implement the queue using an ArrayList. This is because an ArrayList is resizable and Java provides methods that can be manipulated to implement a queue. 
+- For instance, when adding an element i can just use array_list.add(element). 
+- When removing an element in FIFO, I can use array_list.get(0) to get the element and remove it from queue by using array_list.remove(0).
+- When removing an element in LIFO, I can use array_list.get(array_list.size() - 1) to get the element and remove it from queue by using array_list.remove(array_list.size() - 1)
+
+
+Question 1.c: 
+- using factory method pattern: By implementing an abstract class. This is becuase a lot of the methods used in both types of queues are the same and so using an abstract class would eliminate code repetition.
+- It is also important to include error checking in the code. This is becuase the code is error prone since if the dequeue is called before an element is added to the queue it will cause
+the code to break.  
