@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/quickdesk_customerservice",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
